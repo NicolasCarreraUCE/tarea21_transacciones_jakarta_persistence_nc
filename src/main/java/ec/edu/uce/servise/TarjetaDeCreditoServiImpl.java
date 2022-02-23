@@ -27,7 +27,8 @@ public class TarjetaDeCreditoServiImpl implements ITarjetaDeCreditoServi {
 	@Override
 	public TarjetaDeCredito obtenerTarjetaDeCredito(Integer id) {
 		// TODO Auto-generated method stub
-		return this.tarjetaDeCreditoRepo.obtenerTarjetaDeCredito(id);
+		throw new RuntimeException();
+		//return this.tarjetaDeCreditoRepo.obtenerTarjetaDeCredito(id);
 	}
 
 }

@@ -28,14 +28,14 @@ public class Tarea21TransaccionesJakartaPersistenceNcApplication implements Comm
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		TarjetaDeCredito targeta = new TarjetaDeCredito();
-		targeta.setId(0);
+		targeta.setId(1);
 		targeta.setNumero("123456789");
 		targeta.setCedulaPropietario("1727450684");
 		targeta.setCupo(new BigDecimal("600"));
 		
 		//this.tarjetaDeCreditoServi.insertarTarjetaDeCredito(targeta);
 		
-		this.gestorTransaccionServi.transaccionCompraConTarjeta(targeta, new BigDecimal("200"));
+		this.gestorTransaccionServi.transaccionCompraConTarjeta(targeta, new BigDecimal("100"));
 	}
 
 }
